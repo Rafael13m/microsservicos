@@ -1,15 +1,18 @@
 spring:
-    application:
-        name:eurekaserver
-    security:
-        basic:
-            enable:true
+  application:
+    name: eurekaserver
+
+  security:
+    basic:
+      enable: true
     user:
-        name:cursoms-eureka-user
-        password:ecok-usr-eeuramssur
+     name: cursoms-eureka-user
+     password: ecok-usr-eeuramssur
+
 server:
-    port:8761
+  port: 8761
+
 eureka:
-    client:
-        register-with-eureka:false
-        fetch-registry:false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
