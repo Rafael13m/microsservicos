@@ -1,13 +1,12 @@
 spring:
   application:
     name: eurekaserver
-
-#  security:
-#    basic:
-#      enable: true
-#    user:
-#     name: cursoms-eureka-user
-#     password: ecok-usr-eeuramssur
+  security:
+    basic:
+      enable: true
+    user:
+      name: cursoms-eureka-user
+      password: ecok-usr-eeuramssur
 
 server:
   port: 8761
@@ -16,3 +15,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone: http://cursoms-eureka-user:ecok-usr-eeuramssur@localhost:8761/eureka
